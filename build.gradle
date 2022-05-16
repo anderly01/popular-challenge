@@ -1,5 +1,6 @@
 plugins {
     id 'java'
+    id 'application'
 }
 
 group 'com.anderly'
@@ -15,6 +16,11 @@ dependencies {
     implementation 'org.seleniumhq.selenium:selenium-java:4.1.4'
     implementation 'io.github.bonigarcia:webdrivermanager:5.1.1'
 }
+
+application {
+    mainClass = 'com.anderly.TestWebPageMain'
+}
+
 
 test {
     useJUnitPlatform()
